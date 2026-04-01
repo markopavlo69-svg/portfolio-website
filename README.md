@@ -1,24 +1,24 @@
-## 🔲 PROJEKT 1 – Persönliche Portfolio-Seite (statisch)
-**Dauer:** ~1–2 Wochen | **Typ:** HTML + CSS only
+## 🔲 PROJECT 1 – Personal Portfolio Page (Static)
+**Duration:** ~1–2 weeks | **Type:** HTML + CSS only
 
-**Was du baust:**
-Eine vollständige, mehrseitige statische Portfolio-Website mit:
-- Startseite mit deinem Namen, einer kurzen Beschreibung und Navigation
-- "Über mich" Sektion
-- "Projekte" Sektion (vorerst Platzhalter)
-- Kontaktformular (noch nicht funktional)
-- Footer mit Social-Links
+**What you'll build:**
+A complete, multi-page static portfolio website with:
+- Landing page with your name, a short description, and navigation
+- "About Me" section
+- "Projects" section (placeholders for now)
+- Contact form (not functional yet)
+- Footer with social links
 
-**Anforderungen:**
-- [ ] Komplett responsiv (funktioniert auf Handy, Tablet, Desktop)
-- [ ] Navigation mit Hamburger-Menü auf Mobilgeräten (CSS only)
-- [ ] Smooth Scroll zwischen Sektionen
-- [ ] Mindestens 1x Flexbox und 1x CSS Grid verwendet
-- [ ] CSS-Variablen für Farben und Schriften definiert
-- [ ] Saubere Ordnerstruktur: `/index.html`, `/css/style.css`, `/images/`
-- [ ] Auf GitHub hochgeladen mit sinnvollem README
-- [ ] Deployed auf GitHub Pages (kostenlos, gratis Hosting)
+**Requirements:**
+- [ ] Fully responsive (works on mobile, tablet, desktop)
+- [ ] Navigation with hamburger menu on mobile devices (CSS only)
+- [ ] Smooth scroll between sections
+- [ ] At least 1x Flexbox and 1x CSS Grid used
+- [ ] CSS variables defined for colors and fonts
+- [ ] Clean folder structure: `/index.html`, `/css/style.css`, `/images/`
+- [ ] Uploaded to GitHub with a meaningful README
+- [ ] Deployed on GitHub Pages (free hosting)
 
-**Selbstcheck:**
-- Kannst du erklären warum du Flexbox vs. Grid eingesetzt hast?
-- Kannst du das Box Model ohne nachzuschlagen skizzieren?
+**Self-check:**
+- Can you explain why you used Flexbox vs. Grid in each case?
+- Can you sketch the Box Model without looking it up?
