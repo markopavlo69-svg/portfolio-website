@@ -1,7 +1,82 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
+
+:root{
+    --background-color: #171614;
+    --text-color: #dbd0d0;
+    --accent-color: #8a73c1;
+    --muted-color: #817575;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
+ background-color: var(--background-color);
+ color: var(--text-color);
+ font-family: "Segone UI", Arial, sans-serif;
+ display: grid;
+ grid-template-rows: auto auto auto;
+ min-height: 100vh;
+ font-size: 10px;
+}
+
+header{
+    display: flex;
+    background-color: var(--accent-color);
+    height: min-content;
+    justify-content: space-between;
+}
+
+#hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    align-items: center;
+}
+
+.myphoto {
+    width: 100px;
+    height: auto;
+}
+
+#projects h2, h3{
+    text-align: center;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 1em;
+    height: 10em;
+    margin: 1em;
     
+}
+.project-cards > div{
+    background-color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+footer{
+    display: flex;
+    gap: 1em;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--muted-color);
+    width: 100%;
+
 }
