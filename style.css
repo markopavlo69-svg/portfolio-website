@@ -1,82 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
-
-
 :root{
-    --background-color: #171614;
-    --text-color: #dbd0d0;
-    --accent-color: #8a73c1;
-    --muted-color: #817575;
+    --background-color: #091413;
+    --accent-color-dark: #285A48;
+    --accent-color-light: #408A71;
+    --text-color: #B0E4CC;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
 
 body{
- background-color: var(--background-color);
- color: var(--text-color);
- font-family: "Segone UI", Arial, sans-serif;
- display: grid;
- grid-template-rows: auto auto auto;
- min-height: 100vh;
- font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav a{
+    text-decoration: none;
+    color: var(--accent-color-light);
+    font-size: 1rem;
 }
 
+h1,h2,h3{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
 header{
     display: flex;
-    background-color: var(--accent-color);
-    height: min-content;
     justify-content: space-between;
-}
-
-#hero-section{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2em;
     align-items: center;
+    margin: 0.5em;
 }
 
-.myphoto {
-    width: 100px;
+header p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--accent-color-dark);
+}
+
+.hero-img img{
+    width: 7rem;
     height: auto;
 }
 
-#projects h2, h3{
-    text-align: center;
-}
-
-.project-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 1em;
-    height: 10em;
-    margin: 1em;
-    
-}
-.project-cards > div{
-    background-color: var(--accent-color);
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "Saira Stencil One", sans-serif;
-}
-
-footer{
-    display: flex;
-    gap: 1em;
-    align-items: flex-end;
-    justify-content: center;
-    
-}
-
-.footer-content{
+#hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: var(--muted-color);
+    padding: 1em;
+    background-color: var(--accent-color-dark);
     width: 100%;
+    gap: 1em;
 
+    
+
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+#aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+    
+}
+#aboutMe p{
+    text-align: center;
 }

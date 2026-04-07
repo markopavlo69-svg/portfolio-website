@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <p>Marko Pavlovic</p>
-            <div>Hamburger Menu
-            <a href="./aboutme.html">About me</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./index.html">Home</a>
-        </div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
+        <section id="hero">
+            <div class="hero-text">
+            <h2>Junior Full-Stack Developer</h2>
+            <p>My name is Marko Pavlovic and i am currently learning Web Dev</p>
+            </div>
+            <div class="hero-img">
+            <img src="Foto.png" alt="a photo that describes my appearance">
+            </div>
+        </section>
+        <section id="aboutMe">
+            <h2>About Me</h2>
+            <p>My Name is Marko Pavlovic, i am 29 years old i worked most of my life in IT and now i am currently learning web development.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-cards">
 
-    <section id="hero-section">
-        <div class="hero-left">
-        <h2>Full Stack Web Developer</h2>
-        <p>My Name is Marko Pavlovic and i create Full Stack Productivity Apps with Gamification</p>
-        </div>
-        <div class="hero-right">
-            <img class="myphoto" src="Foto.png" alt="a photo of me ">
-        </div>
-    </section>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form method="get">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="first-name"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="last-name" id="lname"><br>
+                <label for="mail">E-Mail</label><br>
+                <input type="email" id="mail" name="e-mail"><br>
+                <label for="user-message">Your Message</label><br>
+                <textarea name="message" id="user-message"></textarea><br>
+                <input type="submit" value="send">
+            </form>
+        </section>
+    </main>
 
-    <section id="projects">
-        <h2>projects</h2>
-        
-        <div class="project-cards">
-            <div>Project 1</div>
-            <div>Project 2</div>
-            <div>Project 3</div>
-            <div>Project 4</div>
-            <div>Project 5</div>
-            <div>Project 6</div>
-            <div>Project 7</div>
-            <div>Project 8</div>
-        </div>
-        
-    </section>
-</main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-info">
-        <p>Marko Pavlovic</p>
-        <p>markopavlo96@hotmail.com</p>
-        </div>
-        
-            <div class="footer-links">
-            <a href="">Github</a>
-            <a href="">Linkedin</a>
-        </div>
-        </div>
+        <p>my-info</p>
+        <div>social links</div>
     </footer>
     
 </body>
