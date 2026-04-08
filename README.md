@@ -6,7 +6,7 @@ HTML + CSS
 Font Awesome
 # Features
 responsive, hamburger menu, css grid css flexbox
-#
-Live Link
-#
+# Link
+https://markopavlo69-svg.github.io/portfolio-website/
+# what i learned
 i learned how to create responsive webpages with flexbox, grid and media queries
