@@ -1,58 +1,79 @@
-:root{
+:root {
     --background-color: #091413;
     --accent-color-dark: #285A48;
     --accent-color-light: #408A71;
     --text-color: #B0E4CC;
+    --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+    --font-heading: "Times New Roman", Times, serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
-
-
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-primary);
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: var(--accent-color-light);
     font-size: 1rem;
 }
 
-h1,h2,h3{
-    
-    font-family: 'Times New Roman', Times, serif;
+h1, h2, h3 {
+    font-family: var(--font-heading);
     font-size: 1.5rem;
 }
-p{
+
+p {
     font-size: 1rem;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0.5em;
+    padding: 0.5em;
+    
 }
 
-header p{
+nav{
+    display: flex;
+    gap: 1em;
+    
+}
+
+nav a{
+    transition: transform 0.3s ease;
+}
+nav a:hover{
+    transform: scale(1.1);
+}
+
+
+header p {
     text-align: center;
     font-size: 1rem;
     color: var(--accent-color-dark);
 }
 
-.hero-img img{
+.hero-img img {
     width: 7rem;
     height: auto;
 }
 
-#hero{
+#hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,11 +82,9 @@ header p{
     background-color: var(--accent-color-dark);
     width: 100%;
     gap: 1em;
-
-    
-
 }
-.hero-text{
+
+.hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,15 +93,155 @@ header p{
     text-align: center;
 }
 
-#aboutMe{
+#aboutMe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
     margin: 1em;
-    
 }
-#aboutMe p{
+
+#aboutMe p {
     text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    margin: 1em;
+    gap: 1em;
+}
+
+.project-card {
+    border: 1px solid var(--accent-color-light);
+    transition: transform 0.3s ease;
+    padding: 2em;
+    min-height: 150px;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#contact input {
+    background-color: var(--accent-color-dark);
+    color: var(--text-color);
+    width: 100%;
+}
+
+#contact textarea {
+    background-color: var(--accent-color-dark);
+    color: var(--text-color);
+    width: 100%;
+    height: 10em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--accent-color-light);
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.input-btn {
+    border-radius: 0.5em;
+    height: 3em;
+    width: 5em;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.input-btn:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--accent-color-dark);
+    padding: 1em;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5em;
+}
+
+.social-links a {
+    color: var(--text-color);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: var(--accent-color-light);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 0.5em;
+        border-radius: 0.5em;
+        gap: 1em;
+        z-index: 10;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #hero {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    form{
+        width: 50%;
+    }
 }

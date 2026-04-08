@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <p>Marko Pavlovic</p>
+        <h1>Marko Pavlovic</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <a href="#hero">Home</a>
             <a href="#projects">Projects</a>
@@ -33,8 +38,16 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-cards">
-
+                
+                <div class="project-card">project 1</div>
+                <div class="project-card">project 2</div>
+                <div class="project-card">project 3</div>
+                <div class="project-card">project 4</div>
+                <div class="project-card">project 5</div>
+                <div class="project-card">project 6</div>
+                <div class="project-card">project 7</div>
             </div>
+       
         </section>
         <section id="contact">
             <h2>Contact</h2>
@@ -47,14 +60,18 @@
                 <input type="email" id="mail" name="e-mail"><br>
                 <label for="user-message">Your Message</label><br>
                 <textarea name="message" id="user-message"></textarea><br>
-                <input type="submit" value="send">
+                <input class="input-btn" type="submit" value="send">
             </form>
         </section>
     </main>
 
     <footer>
-        <p>my-info</p>
-        <div>social links</div>
+        <p>© 2026 Marko Pavlovic</p>
+        <p>markopavlo96@hotmail.com</p>
+        <div class="social-links">
+        <a href="https://github.com/markopavlo69-svg"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marko-pavlovic96/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
     
 </body>
