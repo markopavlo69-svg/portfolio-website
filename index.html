@@ -1,78 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Marko Pavlovic</h1>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <nav>
-            <a href="#hero">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <h1>Marko Pavlovic</h1>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
     <main>
-        <section id="hero">
-            <div class="hero-text">
-            <h2>Junior Full-Stack Developer</h2>
-            <p>My name is Marko Pavlovic and i am currently learning Web Dev</p>
-            </div>
-            <div class="hero-img">
-            <img src="Foto.png" alt="a photo that describes my appearance">
-            </div>
-        </section>
-        <section id="aboutMe">
-            <h2>About Me</h2>
-            <p>My Name is Marko Pavlovic, i am 29 years old i worked most of my life in IT and now i am currently learning web development.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-cards">
-                
-                <div class="project-card">project 1</div>
-                <div class="project-card">project 2</div>
-                <div class="project-card">project 3</div>
-                <div class="project-card">project 4</div>
-                <div class="project-card">project 5</div>
-                <div class="project-card">project 6</div>
-                <div class="project-card">project 7</div>
-            </div>
-       
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form method="get">
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="first-name"><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" name="last-name" id="lname"><br>
-                <label for="mail">E-Mail</label><br>
-                <input type="email" id="mail" name="e-mail"><br>
-                <label for="user-message">Your Message</label><br>
-                <textarea name="message" id="user-message"></textarea><br>
-                <input class="input-btn" type="submit" value="send">
-            </form>
-        </section>
+      <section id="hero">
+        <div class="hero-text">
+          <h2>Junior Full-Stack Developer</h2>
+          <p>My name is Marko Pavlovic and i am currently learning Web Dev</p>
+        </div>
+        <div class="hero-img">
+          <img src="Foto.png" alt="a photo that describes my appearance" />
+        </div>
+      </section>
+      <section id="aboutMe">
+        <h2>About Me</h2>
+        <p>
+          My Name is Marko Pavlovic, i am 29 years old i worked most of my life
+          in IT and now i am currently learning web development.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">project 1</div>
+          <div class="project-card">project 2</div>
+          <div class="project-card">project 3</div>
+          <div class="project-card">project 4</div>
+          <div class="project-card">project 5</div>
+          <div class="project-card">project 6</div>
+          <div class="project-card">project 7</div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form method="get">
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="first-name" /><br />
+          <label for="lname">Last Name:</label><br />
+          <input type="text" name="last-name" id="lname" /><br />
+          <label for="mail">E-Mail</label><br />
+          <input type="email" id="mail" name="e-mail" /><br />
+          <label for="user-message">Your Message</label><br />
+          <textarea name="message" id="user-message"></textarea><br />
+          <input class="input-btn" type="submit" value="send" />
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 Marko Pavlovic</p>
-        <p>markopavlo96@hotmail.com</p>
-        <div class="social-links">
-        <a href="https://github.com/markopavlo69-svg"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/marko-pavlovic96/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+      <p>© 2026 Marko Pavlovic</p>
+      <p>markopavlo96@hotmail.com</p>
+      <div class="social-links">
+        <a
+          href="https://github.com/markopavlo69-svg"
+          aria-label="Visit my Github Page"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/marko-pavlovic96/"
+          aria-label="visit my linkedin page"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
